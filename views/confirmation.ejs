@@ -1,14 +1,4 @@
 <!-- views/confirmation.ejs -->
-<% if(file){ %>
-<pre><%=JSON.stringify(file, null, 2)%></pre>
-<% }%>
-
-<% if(files){ %>
-<pre><%=JSON.stringify(files, null, 2)%></pre>
-<% }%>
-
-<a href='/'>Back</a>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,12 +15,8 @@
     <div class = "wrap">
         <h1><span class = "material-icons">article</span></h1>
         <h2 style = " font-size: 4rem;">IAnalyst</h2>
-        <span class="text"></span><span class = "blink">|</span>
-        <script src = "main.js"></script>
-        <form action="/uploadFilesWithOriginalFilename" enctype="multipart/form-data" method="post">
-          <input type="file" name="attachments" multiple>
-          <button type="submit" class="btn btn-primary">Upload</button>
-        </form>
+        <h2 style = " font-size : 4.5rem;">파일이 업로드되었습니다.</h2>
+       
     </div>
 </body>
 </html>
