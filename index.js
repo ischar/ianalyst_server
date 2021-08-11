@@ -11,8 +11,5 @@ app.use('/', require('./routes/main'));
 app.disable('x-powered-by');
 var port = 3000;
 app.listen(port, function() {
-    var dir = './uploads';
-    if (!fs.existsSync(dir)) fs.mkdirSync(dir);
-    
     console.log('server on ! http://localhost:' + port);
 })

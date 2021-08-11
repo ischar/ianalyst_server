@@ -38,3 +38,16 @@ body {
         opacity : 0;
     }
 }
+
+@media(max-width : 767px) {
+    .text {
+        font-size : 1.5rem;
+        color : #465362;
+    }
+
+    .blink {
+        animation : blink 0.5s infinite;
+        font-size : 1.5rem;
+        color : #465362;
+    }
+}

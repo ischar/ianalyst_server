@@ -4,13 +4,13 @@ var multer   = require('multer'); // 1
 
 var storage  = multer.diskStorage({ // 2
   destination(req, file, cb) {
-    cb(null, 'uploadedFiles/');
+    cb(null, 'uploads/');
   },
   filename(req, file, cb) {
     cb(null, `${Date.now()}__${file.originalname}`);
   },
 });
-var upload = multer({ dest: 'uploadedFiles/' }); // 3-1
+var upload = multer({ dest: 'uploads/' }); // 3-1
 var uploadWithOriginalFilename = multer({ storage: storage }); // 3-2
 
 router.get('/', function(req,res){
